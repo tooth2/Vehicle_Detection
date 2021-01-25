@@ -51,7 +51,9 @@ Non-trainable params: 20,672
 
 ## Results
 ![vehicle_detection](vehicle_detection.png)
-Found 7 boxes for test.jpg
+Found 7 boxes
+[Category(label)|bounding boxes|
+|------|------|
 |car |0.60 (925, 285) (1045, 374)|
 |car |0.66 (706, 279) (786, 350)|
 |bus |0.67 (5, 266) (220, 407)|
