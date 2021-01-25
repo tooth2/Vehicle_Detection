@@ -62,7 +62,7 @@ Found 7 boxes
 |car 0.80 |(761, 282) (942, 412)|
 |car 0.89 |(367, 300) (745, 648)|
 
-## Conclusion
+## Conclusion/Lessons Learned
  * YOLO is a state-of-the-art object detection model that is fast and accurate 
  * It runs an input image through a CNN which outputs a 19x19x5x85 dimensional volume.  
  * The encoding can be seen as a grid where each of the 19x19 cells contains information 
