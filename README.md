@@ -52,15 +52,24 @@ Non-trainable params: 20,672
 ## Results
 ![vehicle_detection](vehicle_detection.png)
 Found 7 boxes
-[Category(label)|bounding boxes|
+|Category(scores)|bounding boxes|
 |------|------|
-|car |0.60 (925, 285) (1045, 374)|
-|car |0.66 (706, 279) (786, 350)|
-|bus |0.67 (5, 266) (220, 407)|
-|car |0.70 (947, 324) (1280, 705)|
-|car |0.74 (159, 303) (346, 440)|
-|car |0.80 (761, 282) (942, 412)|
-|car |0.89 (367, 300) (745, 648)|
+|car 0.60 |(925, 285) (1045, 374)|
+|car 0.66 |(706, 279) (786, 350)|
+|bus 0.67 |(5, 266) (220, 407)|
+|car 0.70 |(947, 324) (1280, 705)|
+|car 0.74 |(159, 303) (346, 440)|
+|car 0.80 |(761, 282) (942, 412)|
+|car 0.89 |(367, 300) (745, 648)|
+
+## Conclusion
+ * YOLO is a state-of-the-art object detection model that is fast and accurate 
+ * It runs an input image through a CNN which outputs a 19x19x5x85 dimensional volume.  
+ * The encoding can be seen as a grid where each of the 19x19 cells contains information 
+ * Filter through all the boxes using non-max suppression. 
+ * Score thresholding on the probability of detecting a class to keep only accurate (high probability) boxes 
+ * Intersection over Union (IoU) thresholding to eliminate overlapping boxes
+ * Applied pretrained model weights - Because training a YOLO model from randomly initialized weights is non-trivial and requires a large dataset as well as lot of computation
 ## Reference 
 1. [You Only Look Once](https://arxiv.org/abs/1506.02640) 
 2. [Redmon and Farhadi, 2016](https://arxiv.org/abs/1612.08242).
