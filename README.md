@@ -16,12 +16,10 @@ Those data set is provided from [drive.ai](https://www.drive.ai/). Drive.ai is a
 
 All these images from this data set are stored into a folder and have labelled them by drawing bounding boxes around every car found. 
 
+**Definition of a box**
+If you have 80 classes that you want YOLO to recognize, you can represent the class label  𝑐  either as an integer from 1 to 80, or as an 80-dimensional vector (with 80 numbers) one component of which is 1 and the rest of which are 0.
 
-**Figure 1** : **Definition of a box**
-If you have 80 classes that you want YOLO to recognize, you can represent the class label  𝑐  either as an integer from 1 to 80, or as an 80-dimensional vector (with 80 numbers) one component of which is 1 and the rest of which are 0. The video lectures had used the latter representation; in this notebook, we will use both representations, depending on which is more convenient for a particular step.
-
-2016 YOLO algorithm in the paper before in the refence are applied for car detection. Since the YOLO model is very computationally expensive to train, we will load pre-trained weights in a h5 format.
-YOLO ("you only look once") is a popular algoritm because it achieves high accuracy while also being able to run in real-time. This algorithm "only looks once" at the image in the sense that it requires only one forward propagation pass through the network to make predictions. After non-max suppression, it then outputs recognized objects together with the bounding boxes.
+2016 YOLO algorithm in the paper in the refence are applied for car detection. Since the YOLO model is very computationally expensive to train, we will load pre-trained weights in a h5 format. YOLO ("you only look once") is a popular algoritm because it achieves high accuracy while also being able to run in real-time. This algorithm "only looks once" at the image in the sense that it requires only one forward propagation pass through the network to make predictions. After non-max suppression, it then outputs recognized objects together with the bounding boxes.
 
 ## Dataset details
 The input is a batch of images of shape (m, 608, 608, 3)
