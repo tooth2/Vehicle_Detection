@@ -29,7 +29,8 @@ The output is a list of bounding boxes along with the recognized classes. Each b
 We will use 5 anchor boxes. So you can think of the YOLO architecture as the following: IMAGE (m, 608, 608, 3) -> DEEP CNN(Convolutional neural network) -> ENCODING (m, 19, 19, 5, 85).Since we are using 5 anchor boxes, each of the 19 x19 cells thus encodes information about 5 boxes. Anchor boxes are defined only by their width and height.
 
 ## Model 
-![YOLO_Model](yolo_model.png)
+![YOLO Model1](yolo_model0.png)
+![YOLO Model2](yolo_model.png)
 Total params: 50,983,561
 Trainable params: 50,962,889
 Non-trainable params: 20,672
